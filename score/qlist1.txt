@@ -1,0 +1,61 @@
+0 0 print section 1, event 1;
+direct 50;
+delgain 0;
+fb 0;
+drywet 0;
+scale 4;
+step 8;
+delfact 48;
+lfowidth 0;
+lforate 0;
+lfoshape 50;
+
+0 1 print event 2;
+drywet 70 10;
+
+0 2 print event 3;
+fb 40;
+
+0 3 print event 4;
+delfact 40;
+
+0 4 print event 5;
+fb 0;
+drywet 0 50;
+
+0 5 print event 6;
+fb 75;
+drywet 70;
+delfact 69;
+step 4;
+
+0 6 print event 7;
+fb 40;
+delfact 70;
+step 8;
+
+0 7 print event 8;
+drywet 0 50;
+
+0 8 print event 9;
+drywet 70 1000;
+
+0 9 print event 10;
+fb 0;
+step 8;
+
+0 10 print event 11; 
+delfact 56;
+
+0 11 print event 12;
+fb 35;
+delfact 60;
+step 6;
+
+0 12 print event 13;
+fb 50;
+delfact 87;
+
+0 13 print event 14 - end;
+drywet 0 500;
+500 direct 0;

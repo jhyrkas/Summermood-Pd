@@ -1,0 +1,11 @@
+direct
+delgain
+step
+scale
+delfact
+drywet
+lfowidth
+lforate
+lfoshape
+drywet
+fb
