@@ -1,6 +1,6 @@
 #N canvas 236 129 1130 640 12;
 #X declare -path lib -path score -path dl4;
-#X obj 684 146 sequencer-section 1;
+#X obj 673 130 sequencer-section 1;
 #X floatatom 787 97 3 0 0 0 - sequencer-label sequencer-nowhere 0;
 #X floatatom 699 98 3 0 0 0 section: sequencer-section-number sequencer-nowhere 0;
 #X obj 746 33 bng 60 250 50 0 sequencer-step empty empty 17 7 0 10 #fcfcfc #000000 #000000;
@@ -199,7 +199,7 @@
 #X connect 21 0 2 1;
 #X connect 21 0 1 1;
 #X connect 23 0 2 0;
-#X restore 23 482 pd out;
+#X restore 24 407 pd out;
 #N canvas 833 258 679 276 DSP 0;
 #X obj 47 44 inlet~;
 #X obj 46 133 outlet~;
@@ -210,8 +210,8 @@
 #X connect 0 0 3 0;
 #X connect 2 0 3 1;
 #X connect 3 0 1 0;
-#X restore 21 276 pd DSP;
-#X floatatom 252 220 3 0 100 0 direct direct-set direct 0;
+#X restore 22 201 pd DSP;
+#X floatatom 64 145 3 0 100 0 direct direct-set direct 0;
 #X floatatom 151 59 3 0 140 0 pitch test-tone-pit-set test-tone-pit 0;
 #X obj 152 83 tgl 15 0 test-tone-noise test-tone-noise-set empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X obj 15 35 bng 40 250 50 0 sequencer-stop empty empty 42 20 0 15 #fcfcfc #000000 #000000;
@@ -448,7 +448,7 @@
 #X connect 17 1 13 1;
 #X connect 18 0 7 0;
 #X connect 19 0 13 0;
-#X restore 21 248 pd input;
+#X restore 22 173 pd input;
 #X text 13 12 RESET;
 #N canvas 56 151 843 620 snapshot 0;
 #X obj 421 282 textfile;
@@ -591,10 +591,9 @@
 #X obj 696 32 bng 25 250 50 0 sequencer-start-1 empty empty 17 7 0 10 #fcfcfc #000000 #000000;
 #X text 687 11 START;
 #X text 744 11 NEXT STEP;
-#X text 646 179 NULL PIECE \, version 1 - Audio input/output and a qlist sequencer. The "direct" control sends input to output (50 for unit gain). You can start the sequencer ("1" message to sequencer-start) and single-step it. "Reset" stops it. The "grab" controls facilitate building qlists.;
 #X text 736 97 event:;
 #X text 511 77 clear;
-#X obj 67 318 dl4;
+#X obj 68 243 dl4;
 #N canvas 625 234 879 537 dl4-parameters 1;
 #X obj 436 388 outlet;
 #X floatatom 126 41 3 -20 20 0 delgain delgain-set delgain 0;
@@ -665,9 +664,9 @@
 #X connect 41 0 0 0;
 #X connect 42 0 0 0;
 #X connect 43 0 27 0;
-#X restore 860 284 pd dl4-parameters;
-#X connect 18 0 52 0;
+#X restore 861 209 pd dl4-parameters;
+#X connect 18 0 51 0;
 #X connect 18 0 17 0;
 #X connect 35 0 18 0;
-#X connect 52 0 17 1;
-#X connect 53 0 52 1;
+#X connect 51 0 17 1;
+#X connect 52 0 51 1;

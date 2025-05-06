@@ -5,7 +5,7 @@ fb 0;
 drywet 0;
 scale 4;
 step 8;
-delfact 48;
+delfact 52;
 lfowidth 0;
 lforate 0;
 lfoshape 50;
@@ -31,7 +31,7 @@ step 4;
 
 0 6 print event 7;
 fb 60;
-delfact 70;
+delfact 73;
 step 8;
 
 0 7 print event 8;
