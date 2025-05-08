@@ -304,7 +304,7 @@
 #X obj 22 62 vu 19 120 \$0-inp-rms empty -1 -10 0 12 #404040 #000000 1 0;
 #X obj 89 79 vsl 19 100 -20 20 0 0 \$0-gain \$0-gain-gui gain -5 -12 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 116 77 bng 19 250 50 0 \$0-unity-gain \$0-unity-gain-gui unity 0 -10 0 12 #fcfcfc #000000 #000000;
-#N canvas 360 265 1001 351 delay-time-gui 1;
+#N canvas 360 265 1001 351 delay-time-gui 0;
 #X obj 148 22 r \$0-scale;
 #X obj 59 23 r \$0-step;
 #X obj 60 154 +;
@@ -382,7 +382,7 @@
 #X restore 826 109 pd delay-time-gui;
 #X obj 158 57 cnv 19 340 130 empty empty empty 20 12 0 12 #00faff #404040 0;
 #X obj 181 77 vradio 19 1 0 3 \$0-scale \$0-scale-gui scale -7 -10 0 12 #fcfcfc #000000 #000000 0;
-#X obj 215 77 nbx 5 17 1 8 0 0 \$0-step \$0-step-gui delay-step 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 215 77 nbx 5 17 1 8 0 0 \$0-step \$0-step-gui step-select 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
 #X text 160 78 4;
 #X text 160 98 2;
 #X text 160 117 1;
