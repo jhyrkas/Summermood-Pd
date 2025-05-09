@@ -1,0 +1,31 @@
+pd dsp 1;
+out-channels 2;
+write-output 1;
+
+# load the patch ;
+load-patch bang;
+
+# wait a second for any loadbang actions to finish and start the piece;
+1 pd~ sequencer-start 1;
+running 1;
+open-control-readsf summermood-out.wav;
+writesf start;
+
+1 open-input-readsf summermood-in.wav;
+12.63 pd~ sequencer-step bang;
+76.77 pd~ sequencer-step bang;
+33.1 pd~ sequencer-step bang;
+32.5 pd~ sequencer-step bang;
+23 pd~ sequencer-step bang;
+37.5 pd~ sequencer-step bang;
+88.5 pd~ sequencer-step bang;
+9 pd~ sequencer-step bang;
+6 pd~ sequencer-step bang;
+11.5 pd~ sequencer-step bang;
+53.5 pd~ sequencer-step bang;
+66 pd~ sequencer-step bang;
+197 pd~ sequencer-step bang;
+
+5 writesf stop;
+1 pd~ stop;
+1 running 0;
